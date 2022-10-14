@@ -16,3 +16,4 @@ Date : 14 -10-22
 13:11 connection string change from default to staplercontext.
 14:19 fix namespace error.
 14:21 scaffolded items for stapler class.
+14:25 created initial migration.
