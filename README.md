@@ -18,3 +18,4 @@ Date : 14 -10-22
 14:21 scaffolded items for stapler class.
 14:25 created initial migration.
 15:02 Added 11 default data.
+15:07 seed data successfully added
