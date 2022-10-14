@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using  TigerStaplers.Models;
 
-namespace MvcMovie.Data
+namespace TigerStaplers.Data
 {
     public class TigerStaplersContext : DbContext
     {
