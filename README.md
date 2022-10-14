@@ -11,4 +11,8 @@ Date : 14 -10-22
 12:21 Welcome route added.
 12:26 changed the title and heading of index page.
 12:28 created new welcome view.
-12:56 Included spalers.cs file and 
+12:56 Included staplers.cs file.
+12:59 created staplers context for database.
+13:11 connection string change from default to staplercontext.
+14:19 fix namespace error.
+14:21 scaffolded items for stapler class.
