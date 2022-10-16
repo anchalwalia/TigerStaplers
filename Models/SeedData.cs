@@ -29,7 +29,8 @@ namespace TigerStaplers.Models
                         Size = "Medium",
                         Material ="Plastic",
                         Price = 22.00M,
-                        PinsIncluded = 50
+                        PinsIncluded = 50,
+                        Rating = 1.5M
 
                     },
 
@@ -41,7 +42,8 @@ namespace TigerStaplers.Models
                          Size = "Small",
                          Material = "Plastic",
                          Price = 15.78M,
-                         PinsIncluded = 80
+                         PinsIncluded = 80,
+                         Rating = 2.5M
 
                      },
 
@@ -53,7 +55,8 @@ namespace TigerStaplers.Models
                           Size = "Medium",
                           Material = "Plastic",
                           Price = 14.99M,
-                          PinsIncluded = 30
+                          PinsIncluded = 30,
+                          Rating = 1.0M
 
                       },
 
@@ -65,7 +68,9 @@ namespace TigerStaplers.Models
                            Size = "Small",
                            Material = "Plastic Iron",
                            Price = 12.77M,
-                           PinsIncluded = 20
+                           PinsIncluded = 20,
+                           Rating = 2.0M
+
 
                        },
 
@@ -77,7 +82,8 @@ namespace TigerStaplers.Models
                             Size = "Medium",
                             Material = "Plastic",
                             Price =40.92M,
-                            PinsIncluded = 60
+                            PinsIncluded = 60,
+                            Rating = 3.5M
 
                         },
 
@@ -89,7 +95,9 @@ namespace TigerStaplers.Models
                              Size = "Medium",
                              Material = "Metal",
                              Price = 45.99M,
-                             PinsIncluded = 54
+                             PinsIncluded = 54,
+                             Rating = 1.0M
+
 
                          },
 
@@ -101,7 +109,9 @@ namespace TigerStaplers.Models
                               Size = "Small",
                               Material = "Plastic",
                               Price = 26.88M,
-                              PinsIncluded = 70
+                              PinsIncluded = 70,
+                              Rating = 4.5M
+
 
                           },
 
@@ -113,7 +123,8 @@ namespace TigerStaplers.Models
                                Size = "Medium",
                                Material = "Metal",
                                Price = 27.9M,
-                               PinsIncluded = 80
+                               PinsIncluded = 80,
+                               Rating = 1.5M
 
                            },
 
@@ -125,7 +136,9 @@ namespace TigerStaplers.Models
                                 Size = "Small",
                                 Material = "Plastic",
                                 Price = 30.45M,
-                                PinsIncluded = 40
+                                PinsIncluded = 40,
+                                Rating = 4.5M
+
 
                             },
 
@@ -137,7 +150,9 @@ namespace TigerStaplers.Models
                                  Size = "Medium",
                                  Material = "Metal",
                                  Price = 22.09M,
-                                 PinsIncluded = 35
+                                 PinsIncluded = 35,
+                                 Rating = 3.5M
+
 
                              },
 
@@ -149,7 +164,9 @@ namespace TigerStaplers.Models
                                   Size = "Medium",
                                   Material = "Plastic",
                                   Price = 60.0M,
-                                  PinsIncluded = 100
+                                  PinsIncluded = 100,
+                                  Rating = 3.5M
+
 
                               }
 
