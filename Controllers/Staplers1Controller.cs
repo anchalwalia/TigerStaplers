@@ -20,8 +20,11 @@ namespace TigerStaplers.Controllers
         }
 
         // GET: Staplers1
-        public async Task<IActionResult> Index(string searchString)
+        public async Task<IActionResult> Index(string staplerSize,string searchString)
         {
+            IQueryable<string> sizeQuery = from s in _context.Stapler
+                                            orderby s.Size
+                                            select s.Size;
             var staplers = from s in _context.Stapler
                          select s;
 
@@ -30,7 +33,18 @@ namespace TigerStaplers.Controllers
                 staplers = staplers.Where(s => s.Name.Contains(searchString));
             }
 
-            return View(await staplers.ToListAsync());
+            if (!string.IsNullOrEmpty(staplerSize))
+            {
+                staplers = staplers.Where(x => x.Size == staplerSize);
+            }
+
+            var staplerSizeVM = new StaplerSizeViewModel
+            {
+                Size = new SelectList(await sizeQuery.Distinct().ToListAsync()),
+                Staplers = await staplers.ToListAsync()
+            };
+
+            return View(staplerSizeVM);
         }
 
         // GET: Staplers1/Details/5 
@@ -62,7 +76,7 @@ namespace TigerStaplers.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Color,Size,Material,Price,PinsIncluded")] Stapler stapler)
+        public async Task<IActionResult> Create([Bind("Id,Name,Color,Size,Material,Price,PinsIncluded,Rating")] Stapler stapler)
         {
             if (ModelState.IsValid)
             {
@@ -94,7 +108,7 @@ namespace TigerStaplers.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Color,Size,Material,Price,PinsIncluded")] Stapler stapler)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Color,Size,Material,Price,PinsIncluded,Rating")] Stapler stapler)
         {
             if (id != stapler.Id)
             {
