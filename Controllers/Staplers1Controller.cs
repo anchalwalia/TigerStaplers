@@ -20,12 +20,20 @@ namespace TigerStaplers.Controllers
         }
 
         // GET: Staplers1
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.Stapler.ToListAsync());
+            var staplers = from s in _context.Stapler
+                         select s;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                staplers = staplers.Where(s => s.Name.Contains(searchString));
+            }
+
+            return View(await staplers.ToListAsync());
         }
 
-        // GET: Staplers1/Details/5
+        // GET: Staplers1/Details/5 
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
