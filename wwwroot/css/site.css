@@ -69,3 +69,30 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+
+
+/******************************************************/
+.create-heading {
+    font-size: 60px;
+    text-decoration:underline;
+    font-family: 'Acme', sans-serif;
+}
+.home-welcome {
+    font-family: 'Acme', sans-serif;
+}
+.row > div {
+    margin: auto;
+}
+.form-group {
+    display: flex;
+}
+.form-group label{
+    width: 50%;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+label {
+    font-weight: bold;
+    font-size: 1.4em;
+}
