@@ -36,3 +36,4 @@ Date : 16/10/2022
 20:36pm Added about us link in layout.cshtml.
 21:48pm After a short break , now i added font style from google fonts in the body tag by using inline css.
 21:49pm Changesd the backgroung color from default to my own choice to make it more fascinating.
+22:32pm After so many tries succeed in finding the best css for my pages so changed font style,size and design of the pages.
