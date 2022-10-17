@@ -37,3 +37,6 @@ Date : 16/10/2022
 21:48pm After a short break , now i added font style from google fonts in the body tag by using inline css.
 21:49pm Changesd the backgroung color from default to my own choice to make it more fascinating.
 22:32pm After so many tries succeed in finding the best css for my pages so changed font style,size and design of the pages.
+23:26pm Added content to about us page.
+23:27pm After so many trials still don,t find any way of how to add images in my file.
+23:28pm so now just pushing all commits and readme and submitting the assignment.
